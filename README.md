@@ -2,7 +2,7 @@
 
 ## Ejecución del proyecto
 
-### Paso 1: Crear archivo `.env` con las variables de entorno.
+### Paso 1: Crear archivo `.env` con las variables de entorno
 
 Copiar el archivo de ejemplo `.env.example` a `.env` para configurar las variables de entorno.
 
