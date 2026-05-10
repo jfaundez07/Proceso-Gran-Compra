@@ -2,16 +2,18 @@ import pandas as pd
 import glob
 import unicodedata
 import re
+import os
 import psycopg2
 from psycopg2 import sql
 from sqlalchemy import create_engine
 
 # --- CONFIGURACIÓN DE CONEXIÓN ---
-DB_USER = "postgres"
-DB_PASS = "TU_CONTRASEÑA" 
-DB_HOST = "localhost"
-DB_PORT = "5432"
-DB_NAME = "grandes_compras"
+# Se utilizan variables de entorno (definidas en el .env de Docker)
+DB_USER = os.environ.get("POSTGRES_USER")
+DB_PASS = os.environ.get("POSTGRES_PASSWORD") 
+DB_HOST = os.environ.get("POSTGRES_HOST")
+DB_PORT = os.environ.get("POSTGRES_PORT")
+DB_NAME = os.environ.get("POSTGRES_DB")
 
 def preparar_entorno_db():
     """Conecta a Postgres para crear la DB y las tablas desde cero."""
