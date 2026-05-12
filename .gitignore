@@ -1,1 +1,17 @@
+# Variables de entorno
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Entornos virtuales
+venv/
+env/
+.env_python/
+
+# SO
+.DS_Store
+Thumbs.db
