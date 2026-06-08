@@ -15,3 +15,7 @@ env/
 # SO
 .DS_Store
 Thumbs.db
+
+# Agents
+AGENTS.md
+.opencode/
